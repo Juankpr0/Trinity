@@ -23,7 +23,7 @@ h1 {
     color: green;
     text-align: center;
     background-color: #121212;
-    width: 300px;
+    width: auto;
    justify-content: flex-start;
 }
 
@@ -32,7 +32,7 @@ h1 {
     color: red;
     text-align: center;
     background-color: #121212;
-    width: 300px;
+    width: auto;
     justify-content: flex-end;
 }
 
@@ -41,6 +41,7 @@ h1 {
     color: blue;
     text-align: center;
     background-color: #121212;
+    width: 900px;
 }
 
 .list-group {
@@ -56,10 +57,14 @@ h1 {
 #img1 {
     height: 200px;
     width: 250px;
+    margin-bottom: -20px;
+    margin-top: -20px;
 }
 
 #img2 {
     height: 150px;
+    margin-bottom: -10px;
+    margin-top: -10px;
 }
 
 h2 {
@@ -68,6 +73,7 @@ h2 {
     border: solid white 5px;
     margin-inline: 400px;
     text-decoration: none;
+    padding: 5px;
 }
 
 a :hover {
@@ -77,4 +83,65 @@ a :hover {
 
 a {
     text-decoration: none;
+}
+
+.progress {
+    width: 400px;
+    height: auto;
+    padding: 5px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.art1 {
+    justify-content: center;
+    justify-items: center;
+}
+
+.art2 {
+    justify-content: center;
+    justify-items: center;
+}
+
+.dropdown {
+    margin-top: -5px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.dropdown-menu {
+    background-color: #121212;
+    text-align: center;
+    color: white;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+a.dropdown-item {
+    color: white;
+}
+
+.dropdown-menu :hover {
+    color: black;
+}
+
+input.form :hover {
+    color: white;
+}
+
+button.btn {
+    color: black;
+    border: solid 1px #121212;
+}
+
+.d-flex :hover{
+    background-color: #121212;
+    border: solid red 1px;
+    color: white;
+}
+
+.form-control :hover {
+    background-color: white;
 }
