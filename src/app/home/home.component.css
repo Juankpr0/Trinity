@@ -145,3 +145,7 @@ button.btn {
 .form-control :hover {
     background-color: white;
 }
+
+li .botton{
+    font-size: 20px;
+}

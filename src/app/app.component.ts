@@ -9,7 +9,7 @@ import { RouterLink, Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, RouterModule, FooterComponent, RouterLink, RouterLinkActive],
+  imports: [HeaderComponent, RouterModule, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
