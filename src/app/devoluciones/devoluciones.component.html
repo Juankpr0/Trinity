@@ -1,21 +1,43 @@
-<div class="container d-flex justify-content-center align-items-center vh-100">
-    <div class="card p-4 shadow-lg" style="width: 22rem; background-color: #2c2c2c;">
-        <h3 class="text-center mb-4">Login</h3>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h3 class="text-center mb-4">Registrar Entrada</h3>
         <form>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control bg-dark text-white" id="email" placeholder="Enter your email" required>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="category" class="form-label">Categoría</label>
+              <select class="form-select" id="category">
+                <option selected>Seleccionar</option>
+                <option value="electronica">Electrónica</option>
+                <option value="accesorios">Accesorios</option>
+              </select>
             </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control bg-dark text-white" id="password" placeholder="Enter your password" required>
+            <div class="col-md-6 mb-3">
+              <label for="subcategory" class="form-label">Subcategoría</label>
+              <select class="form-select" id="subcategory">
+                <option selected>Seleccionar</option>
+                <option value="smartphones">Smartphones</option>
+                <option value="cables">Cables</option>
+              </select>
             </div>
-            <div class="d-grid">
-                <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="productName" class="form-label">Nombre / ID del Producto</label>
+              <input type="text" class="form-control" id="productName" placeholder="Ej: #123 o iPhone 12">
             </div>
-            <div class="text-center mt-3">
-                <a href="#" class="text-decoration-none text-white-50">Forgot Password?</a>
+            <div class="col-md-6 mb-3">
+              <label for="quantity" class="form-label">Cantidad</label>
+              <input type="number" class="form-control" id="quantity" placeholder="Ej: 10">
             </div>
+          </div>
+          <div class="mb-3">
+            <label for="features" class="form-label">Características</label>
+            <input type="text" class="form-control" id="features" placeholder="Ej: Color, almacenamiento">
+          </div>
+          <button type="submit" class="btn btn-success w-100">Registrar Entrada</button>
         </form>
+      </div>
     </div>
-</div>
+  </div>
+  

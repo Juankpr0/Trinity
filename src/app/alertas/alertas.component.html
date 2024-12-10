@@ -1,1 +1,76 @@
-<p>alertas works!</p>
+<div class="container mt-5">
+    <h3 class="text-center mb-4">Gestión de Alertas</h3>
+  
+    <!-- Botón para agregar una nueva alerta -->
+    <div class="d-flex justify-content-end mb-3">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#alertModal">Crear Alerta</button>
+    </div>
+  
+    <!-- Tabla de Alertas -->
+    <table class="table table-striped table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>Título</th>
+          <th>Descripción</th>
+          <th>Fecha</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Stock Bajo</td>
+          <td>El stock de iPhone 12 es inferior a 5 unidades.</td>
+          <td>10/12/2024</td>
+          <td>
+            <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#alertModal">Editar</button>
+            <button class="btn btn-danger btn-sm">Eliminar</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Entrega Pendiente</td>
+          <td>Pedido #1234 aún no ha sido entregado.</td>
+          <td>09/12/2024</td>
+          <td>
+            <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#alertModal">Editar</button>
+            <button class="btn btn-danger btn-sm">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Modal de Alerta -->
+    <div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="alertModalLabel">Crear/Editar Alerta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="alertTitle" class="form-label">Título</label>
+                <input type="text" class="form-control" id="alertTitle" placeholder="Ej: Stock Bajo">
+              </div>
+              <div class="mb-3">
+                <label for="alertDescription" class="form-label">Descripción</label>
+                <textarea class="form-control" id="alertDescription" rows="3" placeholder="Ej: El stock del producto es inferior al mínimo permitido."></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="alertDate" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="alertDate">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Guardar Alerta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

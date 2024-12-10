@@ -7,6 +7,9 @@ import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { DevolucionesComponent } from './devoluciones/devoluciones.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { AlertasComponent } from './alertas/alertas.component';
+import { GestionarCatSubComponent } from './gestionar-cat-sub/gestionar-cat-sub.component';
+import { RegistroComponent } from './login/registro/registro.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,5 +21,8 @@ export const routes: Routes = [
     { path: 'devoluciones', component: DevolucionesComponent },
     { path: 'usuarios', component: UsuariosComponent },
     { path: 'alertas', component: AlertasComponent },
+    { path: 'gestionar-cat-sub', component: GestionarCatSubComponent },
+    { path: 'registro', component: RegistroComponent },
+    { path: 'login', component: LoginComponent },
 
 ];
